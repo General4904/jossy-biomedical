@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Registration Status</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/registrationResponse.css'>
+    <!-- <script src='main.js' defer></script> -->
+</head>
+
+<body>
+
+    <section class="status">
+        <div class="container">
+
+            <h1 id="statusTitle"></h1>
+
+            <p id="statusMessage"></p>
+
+            <a href="index.html" class="btn">Back to home Page</a>
+
+        </div>
+    </section>
+
+    <script>
+        // 1. Get the status from the URL (?status=success)
+        const urlParams = new URLSearchParams(window.location.search);
+        const status = urlParams.get("status"); // Fixed quotes
+
+        const title = document.getElementById("statusTitle");
+        const message = document.getElementById("statusMessage");
+
+        // 2. Find the container to apply the border colors
+        const container = document.querySelector(".container");
+
+        if (status === "success") {
+            title.innerText = "Application Successful";
+            message.innerText = "Thank you for applying. We have received your details and will contact you shortly.";
+            container.classList.add("success"); // Fixed to lowercase 's'
+        } else if (status === "error") {
+            title.innerText = "Application Failed";
+            message.innerText = "There was an issue saving your application. Please try again or contact support.";
+            container.classList.add("error"); // Fixed to lowercase 'e'
+        } else {
+            // Default message if someone visits the page without submitting a form
+            title.innerText = "Status Unknown";
+            message.innerText = "Please submit the registration form first.";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+/* Styles */
+/* REGISTRATION STATUS PAGE */
+
+.status-section {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.status-card {
+    background: #f9fbfd;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 50px 40px;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+}
+
+.status-card h1 {
+    margin-bottom: 15px;
+}
+
+.status-card p {
+    margin-bottom: 25px;
+    font-size: 1.05rem;
+}
+
+/* Success state */
+
+.status-card.success {
+    border-left: 6px solid #28a745;
+}
+
+/* Error state */
+
+.status-card.error {
+    border-left: 6px solid #dc3545;
+}

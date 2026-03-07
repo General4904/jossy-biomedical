@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Register | Training Program</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'none'; connect-src 'self' http://localhost:*; script-src 'self'; style-src 'self'; img-src 'self';">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/register.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Company Logo">
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="training.html">Training</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero-training">
+        <div class="container">
+            <h1>Register for Our Training Program</h1>
+            <p>Fill out the form below and our team will contact you shortly.</p>
+        </div>
+    </section>
+
+    <!-- REGISTRATION FORM -->
+    <section class="register-page">
+        <div class="container">
+            <div class="card register-card">
+                <h2>Training Registration Form</h2>
+
+                <form method="POST" id="form">
+
+                    <div class="form-group">
+                        <label for="firstname">First Name</label>
+                        <input type="text" id="firstname" name="firstname" placeholder="Oriyomi">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastname">Surname</label>
+                        <input type="text" id="lastname" name="lastname" placeholder="Suleiman">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="middle">Middle Name</label>
+                        <input type="text" id="middlename" name="middlename" placeholder="Ibukun">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="name@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+234 8012345679">
+                    </div>
+
+                    <button type="submit" class="btn">Submit Registration</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Your Company Name. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

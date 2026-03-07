@@ -1,0 +1,100 @@
+/* Styles */
+.quotes-section {
+    background-color: #f4f8fc;
+    text-align: center;
+    font-style: italic;
+}
+
+.quotes-section .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+}
+
+.quote-card {
+    border: 1px solid #0a2c5a;
+    padding: 2em 3em;
+    border-radius: 9px;
+    border-left: 5px solid #0a2c5a;
+    background-color: #0a2b5a81;
+    color: white;
+}
+
+.training-program {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.training-program p {
+    margin-top: 20px;
+}
+
+.why-choose ul {
+    margin-top: 20px;
+    list-style: none;
+    padding-left: 0;
+}
+
+.why-choose li {
+    margin-bottom: 12px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.why-choose li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #1f6feb;
+}
+
+.beginner-friendly .card {
+    margin-top: 20px;
+}
+
+.learning-features ul {
+    margin-top: 20px;
+    list-style: none;
+    padding-left: 0;
+}
+
+.learning-features li {
+    margin-bottom: 12px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.learning-features li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #1f6feb;
+}
+
+.skills-covered ul {
+    margin-top: 20px;
+    list-style: none;
+    padding-left: 0;
+}
+
+.skills-covered li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.skills-covered li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: #1f6feb;
+}
+
+.register-section {
+    text-align: center;
+    background-color: #f4f8fc;
+}
