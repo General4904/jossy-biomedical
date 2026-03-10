@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Admin Dashboard</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/admin.css'>
+</head>
+
+<body>
+    <div class="container">
+        <div class="dashboard-header">
+            <h1>Admin Dashboard</h1>
+            <span>Welcome, Engineer Jo ⚡</span>
+        </div>
+
+        <!-- Summary cards -->
+        <div class="summary-cards">
+            <div class="card">
+                <h3>Total Applicants</h3>
+                <p id="total-applicants">0</p>
+            </div>
+            <div class="card">
+                <h3>Total Interns</h3>
+                <p id="total-interns">0</p>
+            </div>
+            <div class="card">
+                <h3>Total Tutors</h3>
+                <p id="total-tutors">0</p>
+            </div>
+        </div>
+
+        <!-- Applicants Table -->
+        <h2>Applicants</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Middlename</th>
+                    <th>Lastname</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="applicants-body"></tbody>
+        </table>
+
+        <!-- Interns Table -->
+        <h2>Interns</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Middlename</th>
+                    <th>Lastname</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="interns-body"></tbody>
+        </table>
+
+        <!-- Tutors Table -->
+        <h2>Tutors</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Middlename</th>
+                    <th>Lastname</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="tutors-body"></tbody>
+        </table>
+    </div>
+
+
+
+    <script src='scripts/main.js'></script>
+
+</body>
+
+</html>

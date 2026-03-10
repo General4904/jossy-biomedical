@@ -68,3 +68,19 @@ if (form) {
     }
   });
 }
+
+// Admin page access
+let logoClicks = 0;
+const logo = document.getElementById("logo");
+
+logo.addEventListener("click", () => {
+  logoClicks++;
+
+  if (logoClicks === 3) {
+    window.location.href = "/admin.html";
+  }
+
+  setTimeout(() => {
+    logoClicks = 0;
+  }, 3000);
+});
