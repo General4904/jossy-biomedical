@@ -70,17 +70,19 @@ if (form) {
 }
 
 // Admin page access
-let logoClicks = 0;
 const logo = document.getElementById("logo");
+let logoClicks = 0;
 
-logo.addEventListener("click", () => {
-  logoClicks++;
+if (logo) {
+  logo.addEventListener("click", () => {
+    logoClicks++;
 
-  if (logoClicks === 3) {
-    window.location.href = "/admin.html";
-  }
+    if (logoClicks === 3) {
+      window.location.href = "/admin.html";
+    }
 
-  setTimeout(() => {
-    logoClicks = 0;
-  }, 3000);
-});
+    setTimeout(() => {
+      logoClicks = 0;
+    }, 3000);
+  });
+}
